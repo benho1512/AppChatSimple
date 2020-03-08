@@ -31,7 +31,7 @@ class Utilities {
     static func styleFilledButton(_ button: UIButton) {
         
         // Filled rounded corner style
-        button.backgroundColor = #colorLiteral(red: 0.5136476426, green: 0.1411709313, blue: 0.553755552, alpha: 1)   //UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
+        button.backgroundColor = #colorLiteral(red: 0.09019607843, green: 0.7176470588, blue: 0.7843137255, alpha: 1)   //UIColor.init(red: 48/255, green: 173/255, blue: 99/255, alpha: 1)
         button.layer.cornerRadius = 25.0
         button.tintColor = UIColor.white
     }
@@ -39,7 +39,7 @@ class Utilities {
     static func styleHollowButton(_ button: UIButton) {
         
         // Hollow rounded corner style
-        button.backgroundColor = #colorLiteral(red: 0.7401136568, green: 0.3946131467, blue: 0.282524166, alpha: 1)
+        button.backgroundColor = #colorLiteral(red: 0.2431372549, green: 0.7725490196, blue: 0.8, alpha: 1)
         //button.layer.borderColor = UIColor.black.cgColor
         button.layer.cornerRadius = 25.0
         button.tintColor = UIColor.black
@@ -49,6 +49,11 @@ class Utilities {
         
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$")
         return passwordTest.evaluate(with: password)
+    }
+    
+    static func isEmailValid(_ email: String) -> Bool {
+        let emailTest = NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}")
+        return emailTest.evaluate(with: email)
     }
     
 }

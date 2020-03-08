@@ -12,10 +12,22 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var titleLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         editElement()
+        
+        titleLabel.text = ""
+        let titleText = Constants.appName
+        var time = 0.0
+        
+        for char in titleText {
+            Timer.scheduledTimer(withTimeInterval: time * 0.1, repeats: false) { (timer) in
+                self.titleLabel.text?.append(char)
+            }
+            time += 1
+        }
     }
     
     func editElement() {

@@ -15,4 +15,12 @@ struct Constants {
     static let loginSegue = "loginToChat"
     static let cellIdentifier = "ReusableCell"
     static let cellNibName = "MessageCell"
+    
+    
+    struct FStore {
+        static let collectionName = "Message"
+        static let senderField = "sender"
+        static let bodyField = "body"
+        static let dateField = "date"
+    }
 }

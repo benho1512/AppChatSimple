@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		34D3683B7188C89591C05AFA /* Pods_AppChatSimple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E53B8506BB2BEF3BCA5951 /* Pods_AppChatSimple.framework */; };
 		3F0EF4EC2412A49F00C694A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0EF4EB2412A49F00C694A6 /* AppDelegate.swift */; };
 		3F0EF4EE2412A49F00C694A6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0EF4ED2412A49F00C694A6 /* SceneDelegate.swift */; };
 		3F0EF4F02412A49F00C694A6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0EF4EF2412A49F00C694A6 /* HomeViewController.swift */; };
@@ -23,9 +22,11 @@
 		3FA123842412CCF000EF0AE3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA123832412CCF000EF0AE3 /* LoginViewController.swift */; };
 		3FA123862412CCFB00EF0AE3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA123852412CCFB00EF0AE3 /* RegisterViewController.swift */; };
 		3FA123892412CFCD00EF0AE3 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA123882412CFCD00EF0AE3 /* Utilities.swift */; };
+		570A7D41539C096A505958A6 /* Pods_AppChatSimple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB2FA12CE4CA789253ACE98 /* Pods_AppChatSimple.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DB2FA12CE4CA789253ACE98 /* Pods_AppChatSimple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppChatSimple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0EF4E82412A49F00C694A6 /* AppChatSimple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChatSimple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0EF4EB2412A49F00C694A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F0EF4ED2412A49F00C694A6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +45,6 @@
 		3FA123852412CCFB00EF0AE3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		3FA123882412CFCD00EF0AE3 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		652B17F13EC29E0EE1E4BE42 /* Pods-AppChatSimple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChatSimple.release.xcconfig"; path = "Target Support Files/Pods-AppChatSimple/Pods-AppChatSimple.release.xcconfig"; sourceTree = "<group>"; };
-		75E53B8506BB2BEF3BCA5951 /* Pods_AppChatSimple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppChatSimple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05B420769A3C3D915376CD3 /* Pods-AppChatSimple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChatSimple.debug.xcconfig"; path = "Target Support Files/Pods-AppChatSimple/Pods-AppChatSimple.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D3683B7188C89591C05AFA /* Pods_AppChatSimple.framework in Frameworks */,
+				570A7D41539C096A505958A6 /* Pods_AppChatSimple.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +63,7 @@
 		354D22A4A1AAE0C6EB942B2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				75E53B8506BB2BEF3BCA5951 /* Pods_AppChatSimple.framework */,
+				1DB2FA12CE4CA789253ACE98 /* Pods_AppChatSimple.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				3F0EF4E42412A49F00C694A6 /* Sources */,
 				3F0EF4E52412A49F00C694A6 /* Frameworks */,
 				3F0EF4E62412A49F00C694A6 /* Resources */,
-				9EED77598D2D52078303FBF7 /* [CP] Embed Pods Frameworks */,
+				A8A24B676ACE99F2F2C93F00 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,7 +229,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9EED77598D2D52078303FBF7 /* [CP] Embed Pods Frameworks */ = {
+		A8A24B676ACE99F2F2C93F00 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -430,7 +430,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WFTQRKAT6;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppChatSimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,7 +451,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7WFTQRKAT6;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = AppChatSimple/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

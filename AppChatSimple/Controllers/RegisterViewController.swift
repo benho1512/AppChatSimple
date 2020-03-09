@@ -61,7 +61,7 @@ class RegisterViewController: UIViewController {
             showError(error!)
         } else {
             let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-                       let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
@@ -70,7 +70,7 @@ class RegisterViewController: UIViewController {
                     self.showError("Error creating user!")
                 } else {
                     let db = Firestore.firestore()
-                    
+
                     db.collection("users").addDocument(data: ["firstname": firstName, "lastName": lastName, "uid": results!.user.uid]) { error in
                         if error != nil {
                             self.showError("Error saving user data")

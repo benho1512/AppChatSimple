@@ -17,6 +17,12 @@ struct Constants {
     static let cellNibName = "MessageCell"
     
     
+    struct textColor {
+        static let lightPurple = "BrandLightPurple"
+        static let cyanBlue = "CyanBlue"
+    }
+    
+    
     struct FStore {
         static let collectionName = "Message"
         static let senderField = "sender"
